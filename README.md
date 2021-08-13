@@ -1,4 +1,1 @@
-# ThunderBoltWeb
-The interconnective space of ThunderBoltWeb by ThunderGuy77!
-
-This is just a place where the new ThunderBoltWeb stuff is going to be posted to! I'm fairly new to GitHub so IDK what I'm doing, LOL. :)
+I'm going to move my website to GitHub because it's way better than code.org, so yeah, coming soon here, I guess. :P
