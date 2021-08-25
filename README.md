@@ -1,1 +1,1 @@
-I'm going to move my website to GitHub because it's way better than code.org, so yeah, coming soon here, I guess. :P
+The official ThunderBoltWeb Page, my website which is the epicenter of my videos, games, projects, and other whatnot!
