@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+html{
+    background-color: #000000;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.menu{
+    background-color: #f44233;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.menu ul{
+    display: inline-flex;
+    margin: 38px;
+}
+.menu ul li{
+    list-style: none;
+    margin: 0 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.menu ul li:hover{
+    color: #000000;
+}
+.logo img{
+    width: 60px;
+    margin-top: -21.5px;
+    margin-right: 10px;
+    margin-bottom: -21.5px;
+    border-color:#f44233;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 100%;
+}
+.logo img:hover{
+    border-color: #ffffff;
+}
+.contactButton{
+    top: 30px;
+    right: 80px;
+    position: absolute;
+    text-decoration: none;
+    color: fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    background-image: linear-gradient(#000000,#000000);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
+}
+.contactButton span{
+    display: block;
+    padding: 8px 22px;
+    color: #f44233;
+}
+.contactButton:hover{
+    background-image: linear-gradient(#fff,#fff);
+}
+.banner{
+    width: 80%;
+    height: 70%;
+    top: 25%;
+    left: 130px;
+    position: absolute;
+    color: #fff;
+}
+.appText{
+    width: 50%;
+    float: left;
+}
+.appText h1{
+    font-size: 43px;
+    width: 640px;
+    position: relative;
+    margin-left: 40px;
+    color:#f44233;
+}
+.appText p{
+    width: 650px;
+    font-size: 15px;
+    margin: 30px 0 30px 40px;
+    line-height: 25px;
+    color: #9c2f25;
+    font-weight: bold;
+}
+.appPicture{
+    width: 1000px;
+    margin-top: 50px;
+    margin-left: 200px;
+    float: right;
+}
+.appPicture img{
+    width: 100%;
+}
+footer{
+    background-color: #f44233;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+footer ul{
+    display: inline-flex;
+    margin: 10px;
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+    margin: 0 20px;
+    color:rgb(255, 255, 255);
+    cursor: pointer;
+    display: inline-block;
+}
+footer ul li a{
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+.grid-container {
+    
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #000000;
+    padding-top: 350px;
+    padding-left: 170px;
+    padding-right: 170px;
+    padding-bottom: 10%;
+    column-gap: 25px;
+    row-gap: 25px;
+}
+.grid-item {
+    display: inline-grid;
+    background-color: #f44233;
+    border: 5px solid #000000;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+    z-index: 0;
+    
+}
+.grid-item:hover{
+    display: inline-grid;
+    background-color: #f44233;
+    border: 5px solid #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
