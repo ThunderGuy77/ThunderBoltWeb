@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Watch Minecraft animation videos now! Stories regarding the YouTubers Skeppy and BadBoyHalo.">
+
+    <!--Title-->
+	<title>Minecraft Animations 3D - ThunderBoltWeb</title>
+    <link rel="icon" href="../icons/mainLogoSmall.png">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="../hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="../icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="../icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="../icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="../index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="../about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="../index.html">
+                    <img src="../icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="../projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="../media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+        <h1>Minecraft Animations</h1>
+
+        <div class="flexCenter">
+            <div class="textArea marginBottom">
+                <p>These projects may be on the more light-hearted and silly side of things, but nonetheless they show the progress of an animator as they practice their animation skills more and more.</p>
+                <p>Reminder not to take any of these videos seriously, as they are all in good humor.</p>
+            </div>
+        </div>
+
+        <div class="videoSection">
+            <a class="videoBlock" href="mcAnimations/mc1.html">
+                <img src="../images/videoThumbnails/mc1.png" alt="Skeppy looking over BadBoyHalo on the ground." class="videoThumbnail">
+                <div class="videoText">
+                    <h2>Skeppy Assaults BadBoyHalo</h2>
+                    <p>The beginning of a series of increasingly epic videos, despite its original purpose of being so bad its funny.</p>
+                </div>
+            </a>
+            <a class="videoBlock" href="mcAnimations/mc2.html">
+                <img src="../images/videoThumbnails/mc2.png" alt="A strange looking Skeppy staring at a body on the floor." class="videoThumbnail">
+                <div class="videoText">
+                    <h2>Skeppy's Revenge</h2>
+                    <p>A direct sequel to the last video, taking place at night. Small improvements made here, including higher quality than the last video.</p>
+                </div>
+            </a>
+            <a class="videoBlock" href="mcAnimations/mc3.html">
+                <img src="../images/videoThumbnails/mc3.png" alt="Skeppy and BadBoyHalo confronting Herobrine." class="videoThumbnail">
+                <div class="videoText">
+                    <h2>Rise of the Muffin</h2>
+                    <p>The epic finale to the three-part series: Rise of the Muffin. The first video rendered with Eevee instead of the Cycles method.</p>
+                </div>
+            </a>
+            <a class="videoBlock halfOpacity" href="">
+                <img src="../images/videoThumbnails/mc4.png" alt="Corrupted versions of Skeppy and BadBoyHalo stand alongside Herobrine above the bodies of the real YouTubers." class="videoThumbnail">
+                <div class="videoText">
+                    <h2>The Hatred of Herobrine</h2>
+                    <p>Herobrine returns for vengeance upon Skeppy and BadBoyHalo with evil versions of themselves. (Coming Soon!)</p>
+                </div>
+            </a>
+        </div>
+
+        <div class="mediumSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+    </div>
+
+    <footer>
+        <a href="../contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="../general.js"></script>
+    <script src="../background.js"></script>
+    <script src="../loader.js"></script>
+    <script src="../darkmode.js"></script>
+</body>
+</html>

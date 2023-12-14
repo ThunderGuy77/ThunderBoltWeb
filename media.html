@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Free music, videos, and other media types available by Victor Mercado. Contact for use in projects for business reasons.">
+
+    <!--Title-->
+	<title>Media, Music, and Videos - ThunderBoltWeb</title>
+    <link rel="icon" href="icons/mainLogoSmall.png">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="index.html">
+                    <img src="icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <h1>Media</h1>
+
+        <div class="flexCenter">
+            <div class="textArea marginBottom">
+                <p>Possessing knowledge in various fields of the evolving digital universe is crucial to excelling in today's day and age. Here, you will find a fine collection of diverse media, including music, videos, and animations.</p>
+            </div>
+        </div>
+
+        <div class="contentRow">
+            <h2 class="textCenter">Videos</h2>
+            <p>Videos are a major part of the way the Internet communicates in this day and age. Watch some videos by Victor by visiting his YouTube channel.</p>
+            <p>Many of these videos are made to entertain in humorous ways while others are made to be informative or promotional. The goal of the channel is to reach a wide variety of audiences and grow the brand <em>ThunderGuy</em>.</p>
+            <div class="playlistSection">
+                <div class="vSectionPiece">
+                    <iframe src="https://www.youtube.com/embed/videoseries?si=l2BFEPycGq6vyqFA&amp;list=PLAtZtoIU_BXzrLJcd7yr1iGYf2ua4ToJY" title="ThunderGuyTV" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/playlist?list=PLAtZtoIU_BXzrLJcd7yr1iGYf2ua4ToJY" target="_blank">
+                        <h3>ThunderGuyTV</h3>
+                        <p>An interesting variety of content across my channel.</p>
+                    </a>
+                </div>
+                <div class="vSectionPiece">
+                    <iframe src="https://www.youtube.com/embed/videoseries?si=RyNb7dK-i6Qs9Kcu&amp;list=PLAtZtoIU_BXw1h2lciwJB8uZnHZSnlCQz" title="Shorts" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/playlist?list=PLAtZtoIU_BXw1h2lciwJB8uZnHZSnlCQz" target="_blank">
+                        <h3>Shorts</h3>
+                        <p>Some funny/interesting things to watch when you're running short on time.</p>
+                    </a>
+                </div>
+                <div class="vSectionPiece">
+                    <iframe src="https://www.youtube.com/embed/videoseries?si=43C23wtZtaDm7Lp_&amp;list=PLAtZtoIU_BXzQwLb4_UEUJEB2AKeeZPak" title="Bully Maguire" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <a href="https://www.youtube.com/playlist?list=PLAtZtoIU_BXzQwLb4_UEUJEB2AKeeZPak" target="_blank">
+                        <h3>Bully Maguire</h3>
+                        <p>Some of my takes on the meme phenomenon known as <em>Bully Maguire</em>.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentRow">
+            <h2 class="textCenter">Music</h2>
+            <p>Music has become an everyday part of many people's lives. Victor has experience creating music for the world as well, but in the form of lyricless tunes.</p>
+            <p>Below is the latest set of music released in my album <a href="https://open.spotify.com/album/5K0bDsCDyobLGtpawcgQKD?si=vdITmtQWT8uToO58bD2NxQ" target="_blank">Generation Foundation</a>. Some of the works are featured in the game <a href="projects/graviverse.html">Gravi-Verse</a> and <a href="projects/gbtd3.html">GeoBlox Tower Defense 3</a>.</p>
+            <div class="playlistSection music">
+                <div class="textCenter">
+                    <h2>Generation Foundation</h2>
+                    <a class="link" href="https://open.spotify.com/album/5K0bDsCDyobLGtpawcgQKD?si=vdITmtQWT8uToO58bD2NxQ">Listen on Spotify</a>
+                </div>
+                <div class="mSectionPiece">
+                    <p>Generation Foundation</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/Outage3.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>Burning</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/Burning.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>Focusing</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/Focusing.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>Grave Space Corner</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/GraveSpaceCorner.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>Hours Upon Tint</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/HoursUponTint.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>Overpowered</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/Overpowered.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>ThunderFusion</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/ThunderFusion.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>Timeless</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/Timeless.mp3" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+                <div class="mSectionPiece">
+                    <p>Truly Chaos</p>
+                    <audio controls>
+                        <source src="audio/generationFoundation/TrulyChaos.wav" type="audio/mpeg">
+                        Your browser does not support the audio element.
+                    </audio>                    
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <footer>
+        <a href="contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="general.js"></script>
+    <script src="background.js"></script>
+    <script src="loader.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>

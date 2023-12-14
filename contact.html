@@ -1,47 +1,134 @@
 <!DOCTYPE html>
-<head>
-    <title>ThunderBoltWeb - Contact</title>
-    <link rel = "stylesheet" href = "style.css">
-    <link rel = "icon" href = "images/mainLogoSmall.png">
+<html lang="en">
 
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Contact Victor Mercado here to inquire about development and design services, or simply ask a general question.">
+
+    <!--Title-->
+	<title>Contact Victor Mercado - ThunderBoltWeb</title>
+    <link rel="icon" href="icons/mainLogoSmall.png">
+
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class = "container">
-        <div class = "menu">
-            <ul>
-                <li class = "logo"><a href = "index.html"><img src="images/mainLogo.png" alt = "ThunderGuy Logo"></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="music.html">Music</a></li>
-                <li><a href = "contact.html" class = "contactButton"><span>Contact</span></a></li>
-            </ul>
-        </div>
 
-        <div class = "banner">
-            <div class = "appText">
-                <h1>Contact</h1>
-                <p>Send your regards to ThunderGuy77.</p>
+    <!--Main style-->
+    <link href="hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="index.html">
+                    <img src="icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <h1>Contact</h1>
+
+        <div class="flexCenter">
+            <div class="textArea marginBottom">
+                <p>Get in touch with Victor Mercado. You can view more from him online by visiting the social links listed on this page, or you can directly message him today!</p>
             </div>
         </div>
 
-        <div class = "grid-container">
-            <div class="grid-item"><a href="mailto:thunderguyspam@email.com" target="_blank"><img src="images/mailIcon.svg" alt="Mail Icon" style="width:50%;height:50%;" class="center"><p style="padding-top:20px;">Email</p></a></div>
-            <div class="grid-item"><a href="https://instagram.com/thunderguy77" target="_blank"><img src="images/instagramIcon.svg" alt="Instagram Icon" style="width:50%;height:50%;" class="center"><p style="padding-top:20px;">Instagram</p></a></div>
-            <div class="grid-item"><a href="https://linkedin.com/in/victor-mercado-74aa74264/" target="_blank"><img src="images/linkedinIcon.svg" alt="Linkedin Icon" style="width:50%;height:50%;" class="center"><p style="padding-top:20px;">Linkedin</p></a></div>
-            <div class="grid-item"><a href="https://twitter.com/thunderguy77" target="_blank"><img src="images/twitterIcon.svg" alt="Twitter Icon" style="width:50%;height:50%;" class="center"><p style="padding-top:20px;">Twitter</p></a></div>
-            <div class="grid-item"><a href="https://github.com/ThunderGuy77/" target="_blank"><img src="images/githubIcon.svg" alt="GitHub Icon" style="width:50%;height:50%;" class="center"><p style="padding-top:20px;">GitHub</p></a></div>
+        <div class="flexCenter">
+            <div class="form">
+                <form action="mailto:thundaguy77@gmail.com" method="get" enctype="text/plain">
+                    <label for="fName">First Name</label>
+                    <input type="text" id="fName" name="firstName" placeholder="First">
+                    <div class="smallSpace"></div>
+
+                    <label for="lName">Last Name</label>
+                    <input type="text" id="lName" name="lastName" placeholder="Last">
+                    <div class="smallSpace"></div>
+
+                    <label for="emailSender">Email</label>
+                    <input type="email" id="emailSender" name="emailSender" placeholder="you@domain.com">
+                    <div class="smallSpace"></div>
+
+                    <label for="comment">Write Me Something</label>
+                    <textarea id="comment" name="firstName" rows="6" placeholder="Ask a question..."></textarea>
+                    <div class="smallSpace"></div>
+
+                    <div class="buttonRow">
+                        <input type="submit" value="Send" class="formButton">
+                        <input type="reset" value="Clear" class="formButton">
+                    </div>
+                </form>
+            </div>
+
+            <div class="socials">
+                <h2>Socials</h2>
+                <p>Connect with me today!</p>
+                <div class="socialSection">
+                    <a class="socialLink" href="https://github.com/ThunderGuy77" target="_blank">
+                        <img src="icons/githubIcon.svg" alt="GitHub Icon">
+                        <p>GitHub</p>
+                    </a>
+                    <a class="socialLink" href="https://www.linkedin.com/in/victor-mercado-74aa74264/" target="_blank">
+                        <img src="icons/linkedinIcon.svg" alt="LinkedIn Icon">
+                        <p>LinkedIn</p>
+                    </a>
+                    <a class="socialLink" href="https://www.instagram.com/thunderguy77/" target="_blank">
+                        <img src="icons/instagramIcon.svg" alt="Instagram Icon">
+                        <p>Instagram</p>
+                    </a>
+                    <a class="socialLink" href="https://twitter.com/ThunderGuy77" target="_blank">
+                        <img src="icons/twitterIcon.svg" alt="Twitter/X Icon">
+                        <p>Twitter / X</p>
+                    </a>
+                    <a class="socialLink" href="https://www.youtube.com/@ThunderGuy77-" target="_blank">
+                        <img src="icons/youtubeIcon.svg" alt="YouTube Icon">
+                        <p>YouTube</p>
+                    </a>
+                    <a class="socialLink" href="mailto:thundaguy77@gmail.com" target="_blank">
+                        <img src="icons/mailIcon.svg" alt="Email Icon">
+                        <p>Mail</p>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
     <footer>
-        <ul>
-            <li><a href = "about.html">About</a></li>
-            <li>Created by ThunderGuy77</li>
-        </ul>
+        <a href="contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
     </footer>
+
+    <!--Javascript-->
+    <script src="background.js"></script>
+    <script src="loader.js"></script>
+    <script src="darkmode.js"></script>
 </body>
 </html>

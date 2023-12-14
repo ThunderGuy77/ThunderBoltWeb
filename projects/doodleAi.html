@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Try the Doodle Guessing AI online now! Can you get it to recognize your drawings?">
+
+    <!--Title-->
+	<title>Try The Doodle Guessing AI - ThunderBoltWeb</title>
+    <link rel = "icon" href = "../icons/mainLogoSmall.png">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="../hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="../icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="../icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="../icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="../index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="../about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="../index.html">
+                    <img src="../icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="../projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="../media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+        <h1>Doodle Guessing AI</h1>
+
+        <div class="flexCenter">
+            <div class="mediaArea">
+                <iframe id="mainMedia" class="projectFrame" src="https://scratch.mit.edu/projects/657209619/embed"></iframe>
+            </div>
+        </div>
+        <div class="flexCenter">
+            <div class="optionArea">
+                <button onclick="copyLink()" class="oAreaOption"><span id="copyText">Copy Link</span></button>
+                <button onclick="window.open('https://scratch.mit.edu/projects/657209619/embed')" class="oAreaOption"><span>Open On Scratch</span></button>
+                <button onclick="window.open('https://scratch.mit.edu/projects/657209619/')" class="oAreaOption"><span>Fullscreen</span></button>
+            </div>
+        </div>
+        <div class="flexCenter">
+            <div class="textAreaMedia">
+                <h2>About This Project</h2>
+                <p>This is a primitive AI which guesses what you draw based on its "training." Just click to start and then draw what is asked. When your ink runs out, the AI will try to guess what you have drawn. It's kind of like Google's Quickdraw!</p>
+                <p>This is an old project, but I included it to show some of the projects I used to make. Also, its kind of fun to use! Press the green flag to restart the project. The AI will learn based on what you teach it, but just keep in mind if you leave/refresh the page, its memory will be cleared.</p>
+            </div>
+        </div>
+        
+        <div class="mediumSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+    </div>
+
+    <footer>
+        <a href="../contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="../general.js"></script>
+    <script src="../background.js"></script>
+    <script src="../loader.js"></script>
+    <script src="../darkmode.js"></script>
+</body>
+</html>

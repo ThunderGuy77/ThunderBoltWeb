@@ -1,41 +1,134 @@
 <!DOCTYPE html>
-<head>
-    <title>ThunderBoltWeb - About</title>
-    <link rel = "stylesheet" href = "style.css">
-    <link rel = "icon" href = "images/mainLogoSmall.png">
+<html lang="en">
 
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Developer, programmer, designer, and much more - discover who Victor Mercado is, the man behind the brand's character, ThunderGuy.">
+
+    <!--Title-->
+	<title>About ThunderBoltWeb and Services - ThunderBoltWeb</title>
+    <link rel="icon" href="icons/mainLogoSmall.png">
+    
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-</head>
-<body>
-    <div class = "container">
-        <div class = "menu">
-            <ul>
-                <li class = "logo"><a href = "index.html"><img src="images/mainLogo.png" alt = "ThunderGuy Logo"></a></li>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="music.html">Music</a></li>
-                <li><a href = "contact.html" class = "contactButton"><span>Contact</span></a></li>
-            </ul>
-        </div>
 
-        <div class = "banner">
-            <div class = "appText">
-                <h1>About</h1>
-                <p>ThunderBoltWeb and all the respective sites linked here are pages maintained by ThunderGuy77. This site was made for the purpose of showcasing his work and providing a means of easy access to his main projects. For those interested in working with ThunderGuy77, please refer to <a href = "contact.html" style="color: #fff;">the Contact page</a>.</p>
-                <p>The name "ThunderBoltWeb" is used to refer to this site, the interconnectedness of the digital media created by yours truly. The title "ThunderGuy77" is like a pseudonym, though the two sevens are added on as they represent the superior number. They also help when making usernames. Victor Mercado is the name of the individual who maintains this website.</p>
-                <p>If you landed here and you don't know where you are, have no worries! This is not a malevolent wesbite, but simply a place to stalk me. Have fun!</p>
-            </div>
+    <!--Main style-->
+    <link href="hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="icons/githubIcon.svg" alt="Loading...">
         </div>
     </div>
 
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="index.html">
+                    <img src="icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <h1>About</h1>
+
+        <div class="flexCenter">
+            <div class="textArea marginBottom">
+                <p>ThunderBoltWeb consists of pages maintained by Victor Mercado. This site was made for the purpose of showcasing his work and abilities as well as providing a means of easy access to his main projects. For those interested in working with Victor, please refer to the <a href="contact.html">Contact page</a>.</p>
+                <p>If you landed here and you don't know where you are, do not worry! This is not a malevolent wesbite, but simply a place to view some of my best public digital work.</p>
+            </div>
+        </div>
+
+        <div class="blackLine"></div>
+        
+        <div class="flexCenter">
+            <div class="colCard">
+                <div class="textArea">
+                    <h2 class="textCenter">Company</h2>
+                    <div class="line"></div>
+                    <p class="textCenter">CSDO at <a href="https://www.linkedin.com/company/avlory/" target="_blank">Avlory</a></p>
+                    <img src="images/avloryThumbnail.png" class="imgFit" alt="Avlory Company Logo">
+                    <p><i>As the leading front-end web developer and future innovation project manager at Avlory, I aim to extend our business into all crucial areas of tech and provide only the finest of services available.</i></p>
+                </div>
+            </div>
+            <div class="colCard">
+                <div class="textArea">
+                    <h2 class="textCenter">Achievements</h2>
+                    <div class="line"></div>
+                    <p><i>Striving for self-improvement has brought me to new heights.</i></p>
+                    <ul>
+                        <li>Nationally Recognized by CollegeBoard</li>
+                        <li>Gold Medal Computer Science CTE Completer</li>
+                        <li>Game Design Champion of Champions Award</li>
+                        <li>Received <em>5</em> on all AP exams taken (4)</li>
+                        <li>Recognized Top AP English Language Student</li>
+                        <li>Consistent 4.0+ GPA for 7 Years</li>
+                        <li>President's Award for Educational Excellence</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="colCard">
+                <div class="textArea">
+                    <h2 class="textCenter">Skills</h2>
+                    <div class="line"></div>
+                    <p><i>I've acquired many skills working with software and more.</i></p>
+                    <ul>
+                        <li>Knows Java, Python, Javascript, and C#</li>
+                        <li>Experience in Premiere Pro, Photoshop, Blender, and Unity</li>
+                        <li>Worked in game development, music composition, graphic design, animation, photo editing, and video editing</li>
+                        <li>Familiar with Microsoft Office & G Suite applications</li>
+                        <li>Fluent in English and Spanish</li>
+                        <li>Adept at writing both creatively and in an informative manner</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="blackLine"></div>
+
+        <div class="flexCenter" style="margin-top: 25px;">
+            <div class="textArea marginBottom">
+                <h1 class="smallHead">Why <em>ThunderGuy77</em>?</h1>
+                <div class="line"></div>
+                <p>The name "ThunderGuy77" is like a pseudonym. Thunder is a powerful noise, the result of something not only extraordinary but quick. The number seven is a number of perfection. The name <i>ThunderGuy77</i> was born in the pursuit of efficient excellence and powerful perfection. Look to the logo and you will be able to see both lightning and the double sevens.</p>
+            </div>
+        </div>
+        
+    </div>
+
     <footer>
-        <ul>
-            <li><a href = "about.html">About</a></li>
-            <li>Created by ThunderGuy77</li>
-        </ul>
+        <a href="contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
     </footer>
+
+    <!--Javascript-->
+    <script src="general.js"></script>
+    <script src="background.js"></script>
+    <script src="loader.js"></script>
+    <script src="darkmode.js"></script>
 </body>
 </html>

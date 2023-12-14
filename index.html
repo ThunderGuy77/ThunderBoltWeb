@@ -1,45 +1,114 @@
 <!DOCTYPE html>
-<head>
-    <title>ThunderBoltWeb</title>
-    <link rel = "stylesheet" href = "style.css">
-    <link rel = "icon" href = "images/mainLogoSmall.png">
+<html lang="en">
 
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Visit ThunderBoltWeb to find free development projects, fun games, media, videos, and more by Victor Mercado. Available for contact concerning anything, including development services, website building, and game design.">
+
+    <!--Title-->
+	<title>ThunderBoltWeb - Development, Games, Videos, and More</title>
+    <link rel="icon" href="icons/mainLogoSmall.png">
+
+    <!--Font-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="hyperRed.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class = "container">
-        <div class = "menu">
-            <ul>
-                <li class = "logo"><a href = "index.html"><img src="images/mainLogo.png" alt = "ThunderGuy Logo"></a></li>
-                    <li class = "active"><a href="index.html">Home</a></li>
-                    <li><a href="videos.html">Videos</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="music.html">Music</a></li>
-                <li><a href = "contact.html" class = "contactButton"><span>Contact</span></a></li>
-            </ul>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="index.html">
+                    <img src="icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <h1>ThunderBoltWeb</h1>
+
+        <div class="sidewayLayout">
+            <div class="textArea marginLeft2 relative">
+                <p>Welcome to ThunderBoltWeb. This site serves as a connection point to the great variety of projects created by Victor Mercado, the person behind the alias <em>ThunderGuy</em>.</p>
+                <p>Discover the span of projects created by this individual. There is a great range of content available on display here. Watch videos, play games, and listen to music all made by him.</p>
+                <p><em>We might not always have control, but we always have a choice.</em></p>
+                <img src="images/thunderGuyWebDev.svg" class="imgBottom" alt="An entity using a computer to write code.">
+            </div>
+            <div class="card3Area marginRight2">
+                <div class="card" id="cardFirst">
+                    <a href="about.html" class="cardA">
+                        <h2>Who I Am</h2>
+                        <p>Lack of trust creates division on the Internet. Break that barrier by learning who I am.</p>
+                        <img class="backImage" src="icons/questionMark.png" alt="Question Mark Icon">
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="projects.html" class="cardA">
+                        <h2>Web Development</h2>
+                        <p>Looking for a new website? Check out some of the sites I've made under the "Projects" page!</p>
+                        <img class="backImage" src="icons/code.png" alt="Markup Code Icon">
+                    </a>
+                </div>
+                <div class="card" id="cardLast">
+                    <a href="contact.html" class="cardA">
+                        <h2>Contact Me</h2>
+                        <p>Have a question? Want to chat? Send a message about anything your heart desires!</p>
+                        <img class="backImage" src="icons/phone.png" alt="Phone Icon">
+                    </a>
+                </div>
+            </div>
         </div>
 
-        <div class = "banner">
-            <div class = "appText">
-                <h1>ThunderBoltWeb<br><i>Hub of All Things ThunderGuy</i></h1>
-                <p>Discover the span of projects created by Victor Mercado,<br>the person behind the name <i>ThunderGuy</i>. Watch videos,<br>play games, and listen to music all made by him.</p>
-                <p><i>We might not always have control, but we always have a choice.</i></p>
-            </div>
-            <div class = "appPicture">
-                <img src = "images/thunderGuyGraphic.svg">
+        <div class="horizontalSpace"></div>
+
+        <div class="fullWidthInside">
+            <div class="bgImageArea">
+                <p>Unique Creations</p>
+                <p>Pleasing Media</p>
+                <p>Product Excellence</p>
+    
+                <img src="images/thunderGuyGraphic.svg" alt="An entity pointing forward toward limitless bounds.">
             </div>
         </div>
     </div>
 
     <footer>
-        <ul>
-            <li><a href = "about.html">About</a></li>
-            <li><a href = "https://thunderguy77.itch.io/graviverse" target="_blank">Suggested</a></li>
-            <li>Last Updated March 29, 2023</li>
-            <li>Created by ThunderGuy77</li>
-        </ul>
+        <a href="contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
     </footer>
+
+    <!--Javascript-->
+    <script src="background.js"></script>
+    <script src="loader.js"></script>
+    <script src="darkmode.js"></script>
 </body>
 </html>

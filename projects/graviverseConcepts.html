@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="View some concept art and other ideas that have to do with the game of Gravi-Verse.">
+
+    <!--Title-->
+	<title>View Gravi-Verse Concepts Free Now - ThunderBoltWeb</title>
+    <link rel = "icon" href = "../icons/mainLogoSmall.png">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="../hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="../icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="../icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="../icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="../index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="../about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="../index.html">
+                    <img src="../icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="../projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="../media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+        <h1>Gravi-Verse Concepts</h1>
+
+        <div class="flexCenter">
+            <div class="textArea marginBottom">
+                <p>This page displays some concepts and art from the game <i>Gravi-Verse</i>. From renders to animations and more, discover some of the best ideas of the game here.</p>
+            </div>
+        </div>
+
+        <div id="galleryOverlay"></div>
+        <div class="flexGallery">
+            <div class="imgBox">
+                <img src="../images/graviConcepts/JayBots.png" alt="The official Gravi-Verse artwork">
+                <div class="caption">The official Gravi-Verse artwork</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/graviConcepts/LighteyeOrb.png" alt="A Lighteye enemy looking intently at a shining orb in front of it">
+                <div class="caption">A Lighteye enemy looking intently at a shining orb in front of it</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/graviConcepts/JayIcon.svg" alt="A legendary blue outline version of Jay, seen in Gravi-Verse's main icon">
+                <div class="caption">A legendary blue outline version of Jay, seen in Gravi-Verse's main icon</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/graviConcepts/OriginalArt.png" alt="The original artwork for the game">
+                <div class="caption">The original artwork for the game</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/graviConcepts/Space.png" alt="A minimalistic branded image of space">
+                <div class="caption">A minimalistic branded image of space</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/gifThumbnail.gif" alt="A Wrapped Knight enemy walking indefinitely">
+                <div class="caption">A Wrapped Knight enemy walking indefinitely</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/graviConcepts/Eclipse.svg" alt="A serene yet eerie setting with a faint eclipse observing the sky">
+                <div class="caption">A serene yet eerie setting with a faint eclipse observing the sky</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/graviConcepts/Ragnork.png" alt="The villain Ragnork as he stands still in a room in pensive thoughts">
+                <div class="caption">The villain Ragnork as he stands still in a room in pensive thoughts</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images/graviConcepts/ElementRollBot.svg" alt="A conceptual element version of the Doom Bot, unreleased as of 2023">
+                <div class="caption">A conceptual element version of the Doom Bot, unreleased as of 2023</div>
+            </div>
+            <div class="imgBox">
+                <img src="../images//graviConcepts/ColdEarth.png" alt="Earth's main city as it was last seen in the game">
+                <div class="caption">Earth's main city as it was last seen in the game</div>
+            </div>
+        </div>
+        
+        <div class="mediumSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+    </div>
+
+    <footer>
+        <a href="../contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="../general.js"></script>
+    <script src="../background.js"></script>
+    <script src="../loader.js"></script>
+    <script src="../darkmode.js"></script>
+</body>
+</html>

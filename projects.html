@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="View a list of polished projects developed or currently in development by Victor Mercado. Coding, games, AI, and other digital creations.">
+
+    <!--Title-->
+	<title>ThunderBoltWeb - Projects</title>
+    <link rel="icon" href="icons/mainLogoSmall.png">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="index.html">
+                    <img src="icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <h1>Projects</h1>
+
+        <div class="flexCenter">
+            <div class="textArea marginBottom">
+                <p>View an assortment of many different projects here. All of these projects are development or digital media related. It is encouraged to look through the list&mdash;there's something to enjoy for various audiences.</p>
+                <p>Some options may be grayed out, meaning they are yet to be released or added to ThunderBoltWeb.</p>
+            </div>
+        </div>
+
+        <!--List of projects-->
+
+        <!--Game development-->
+        <div class="dropdown">
+            <div class="dropdownRow" onclick="toggleDropdown(this)">
+                <div class="dropdownTitle">
+                    <img src="icons/joystick.svg" alt="Joystick Icon">
+                    <p>Game Development</p>
+                </div>
+                <div class="dropdownTitle">
+                    <img class="dropdownArrow" src="icons/arrow.svg" alt="Dropdown Arrow">
+                </div>
+            </div>
+            <div class="dropdownContent">
+                <div class="dropDownPiece">
+                    <iframe src="https://www.youtube.com/embed/noa5UdzFJgo" title="Victor Mercado - Demo Reel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="dropdownPiece">
+                    <p class="caption">The short video above briefly overviews the progression of work quality over the course of a few years. Experience the quality for yourself by navigating to one of the projects listed below.</p>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="projects/graviverse.html" class="horizontalCard">
+                        <img src="images/graviVerseThumbnail.png" alt="Gravi-Verse Game Thumbnail">
+                        <div class="hCardText">
+                            <h3>Gravi-Verse</h3>
+                            <p>Explore the universe in a 2D platformer like no other, with exciting adventure and combat.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="projects/gbtd3.html" class="horizontalCard">
+                        <img src="images/geoblox3Thumbnail.png" alt="GeoBlox Tower Defense 3 Game Thumbnail">
+                        <div class="hCardText">
+                            <h3>GeoBlox Tower Defense 3</h3>
+                            <p>Fight against the Blips in this endless idle tower defense game. The variety of enemies and towers is endless!</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="projects/geobloxmini.html" class="horizontalCard">
+                        <img src="images/geobloxMiniThumbnail.png" alt="GeoBlox Mini Game Thumbnail">
+                        <div class="hCardText">
+                            <h3>GeoBlox Mini</h3>
+                            <p>Another entry in the <i>GeoBlox</i> series, this 3D Unity minigame is all about having fast reflexes and taking down as many enemies as possible.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Website development-->
+        <div class="dropdown">
+            <div class="dropdownRow" onclick="toggleDropdown(this)">
+                <div class="dropdownTitle">
+                    <img src="icons/laptop.svg" alt="Laptop Icon">
+                    <p>Website Development</p>
+                </div>
+                <div class="dropdownTitle">
+                    <img class="dropdownArrow" src="icons/arrow.svg" alt="Dropdown Arrow">
+                </div>
+            </div>
+            <div class="dropdownContent">
+                <div class="dropDownPiece">
+                    <img src="images/thunderGuyWebDev.svg" class="iPoster" alt="ThunderGuy sitting at a desk and working on a computer.">
+                </div>
+                <div class="dropdownPiece">
+                    <p class="caption">The Internet is constantly growing and changing. A look at some of the sites below will demonstrate how Victor Mercado keeps up with the restless web world.</p>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="index.html" class="horizontalCard">
+                        <img src="icons/mainLogoSmall.png" class="scaleDown transformScaleDownLight" alt="ThunderBoltWeb Logo">
+                        <div class="hCardText">
+                            <h3>ThunderBoltWeb</h3>
+                            <p>This is the site you are currently on, but it would be a crime to not include it on this list.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="" class="horizontalCard comingSoon" title="Coming Soon!"> <!--Link to https://avlory.com here later-->
+                        <img src="images/avloryThumbnail.png" class="scaleDown" alt="Avlory Company Logo">
+                        <div class="hCardText">
+                            <h3>Avlory</h3>
+                            <p>This website is developed as a collaboration between individuals, but Victor is actively involved with its creation and is one of the major devs of the site.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Artificial Intelligence-->
+        <div class="dropdown">
+            <div class="dropdownRow" onclick="toggleDropdown(this)">
+                <div class="dropdownTitle">
+                    <img src="icons/robot.svg" alt="Robot Icon">
+                    <p>Artificial Intelligence</p>
+                </div>
+                <div class="dropdownTitle">
+                    <img class="dropdownArrow" src="icons/arrow.svg" alt="Dropdown Arrow">
+                </div>
+            </div>
+            <div class="dropdownContent">
+                <div class="dropDownPiece">
+                    <img src="images/thunderGuyAI.svg" class="iPoster" alt="ThunderGuy being chased by an evil-looking robot.">
+                </div>
+                <div class="dropdownPiece">
+                    <p class="caption">Though artificial intelligence has recently taken the Internet by storm, AI has fascinated me for some time now. Take a look at some of my projects regarding this.</p>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="projects/doodleAi.html" class="horizontalCard">
+                        <img src="images/doodleAIThumbnail.svg" class="scaleDown" alt="Doodle Guessing AI Potential Icon">
+                        <div class="hCardText">
+                            <h3>Doodle Guessing AI</h3>
+                            <p>This project was made a long time ago, but it is included to show Victor's growth in regards to programming. Nevertheless, it's still entertaining to use.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="" class="horizontalCard comingSoon" title="Coming Soon!">
+                        <img src="images/slaideThumbnail.png" alt="Slaide AI Logo">
+                        <div class="hCardText">
+                            <h3>Slaide AI</h3>
+                            <p>Slaide is a personal artificial intelligence trained by the user. It is designed to learn how to speak directly from you.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!--Digital Creations-->
+        <div class="dropdown">
+            <div class="dropdownRow" onclick="toggleDropdown(this)">
+                <div class="dropdownTitle">
+                    <img src="icons/pen.svg" alt="Pen Drawing Icon">
+                    <p>Digital Creations</p>
+                </div>
+                <div class="dropdownTitle">
+                    <img class="dropdownArrow" src="icons/arrow.svg" alt="Dropdown Arrow">
+                </div>
+            </div>
+            <div class="dropdownContent">
+                <div class="dropDownPiece">
+                    <img src="images/thunderGuyArt.svg" class="iPoster" alt="ThunderGuy enthusiastically holding an art palette and a brush.">
+                </div>
+                <div class="dropdownPiece">
+                    <p class="caption">From 3D animations to 2D artistic concepts, these experiments with digital artwork and asset creation is far from limited.</p>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="projects/graviverseConcepts.html" class="horizontalCard">
+                        <img src="images/graviConceptsThumbnail.png" alt="A lighteye enemy from Gravi-Verse looking at a shiny blue orb.">
+                        <div class="hCardText">
+                            <h3><i>Gravi-Verse</i> Concepts</h3>
+                            <p>Some of the assets from my one of Victor's biggest projects, <i>Gravi-Verse</i>. Includes some concept art.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="projects/mcAnimations.html" class="horizontalCard">
+                        <img src="images/mcAnimationThumbnail.png" alt="Thumbnail for a Skeppy and BadBoyHalo Minecraft animation.">
+                        <div class="hCardText">
+                            <h3>Minecraft Animations</h3>
+                            <p>Though these videos are silly, they show the evolution of a simple animator.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="" class="horizontalCard comingSoon" title="Coming Soon!">
+                        <img src="images/gifThumbnail.gif" class="gifAdjust" alt="Animated gif of a mummy-like enemy from Gravi-Verse walking.">
+                        <div class="hCardText">
+                            <h3>2D Animation Collection</h3>
+                            <p>A collection of short animations that showcase different styles of creating pleasing visual media.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="dropdownPiece">
+                    <a href="" class="horizontalCard comingSoon" title="Coming Soon!">
+                        <img src="images/cubitThumbnail.png" alt="Thumbnail from a Cubit character animation.">
+                        <div class="hCardText">
+                            <h3>The Cubits</h3>
+                            <p>Animations concerning "Cubits," digital creatures that get themselves into all sorts of shenanigans.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <a href="contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="general.js"></script>
+    <script src="background.js"></script>
+    <script src="loader.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>

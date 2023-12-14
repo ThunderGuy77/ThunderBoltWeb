@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Play the game &quot;GeoBlox Tower Defense 3&quot; by ThunderGuy online for free! A fun idle tower defense game with unlockables and extensive upgrades.">
+
+    <!--Title-->
+	<title>Play "GeoBlox Tower Defense 3" Game Online Free - ThunderBoltWeb</title>
+    <link rel = "icon" href = "../icons/mainLogoSmall.png">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="../hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="../icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="../icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="../icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="../index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="../about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="../index.html">
+                    <img src="../icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="../projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="../media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+        <h1>GeoBlox Tower Defense 3</h1>
+
+        <button class="mobileWarning" onclick="this.remove()">
+            <span>Uh-oh! You've encountered a project that isn't meant for mobile devices! You can try to use the project anyway, but it is recommended you try on a desktop instead!</span>
+            <span>(Click to hide)</span>
+        </button>
+
+        <div class="flexCenter">
+            <div class="mediaArea">
+                <iframe id="mainMedia" class="projectFrame" src="https://html-classic.itch.zone/html/8223756/index.html"></iframe>
+            </div>
+        </div>
+        <div class="flexCenter">
+            <div class="optionArea">
+                <button onclick="copyLink()" class="oAreaOption"><span id="copyText">Copy Link</span></button>
+                <button onclick="window.open('https://thunderguy77.itch.io/gbtd3')" class="oAreaOption"><span>Open On Itch.io</span></button>
+                <button onclick="window.open('https://html-classic.itch.zone/html/8223756/index.html')" class="oAreaOption"><span>Fullscreen</span></button>
+            </div>
+        </div>
+        <div class="flexCenter">
+            <div class="textAreaMedia">
+                <h2>About This Project</h2>
+                <p>Welcome to GeoBlox Tower Defense 3, a brand new tower defense game meant to be simple, entertaining, and versatile!</p>
+                <p>Enjoy building defenses, fighting all kinds of enemies, and exploring new areas. If you need to leave, no worries! You can pick up right where you left off - and in fact, your Blocks will fight for you while you're gone!</p>
+            </div>
+        </div>
+        
+        <div class="mediumSpace"></div>
+        <div class="headLink"><a href="../projects.html">◄ Projects</a></div>
+    </div>
+
+    <footer>
+        <a href="../contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2023</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="../general.js"></script>
+    <script src="../background.js"></script>
+    <script src="../loader.js"></script>
+    <script src="../darkmode.js"></script>
+</body>
+</html>
