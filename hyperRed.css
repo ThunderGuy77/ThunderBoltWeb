@@ -271,6 +271,32 @@ span {
     margin: 10px;
 }
 
+.bgUpdateArea {
+    background-color: black;
+    border-radius: 10px;
+    
+    color: white;
+    text-align: center;
+    padding: 10px;
+    list-style: none;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 780px;
+}
+.description {
+    font-style: italic;
+    margin-top: 10px;
+    font-size: small;
+    color: #f44233;
+}
+.bgUpdateArea h2 {
+    color: white;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
 .socials {
     min-width: 400px;
 
@@ -639,11 +665,8 @@ iframe {
 }
 
 .mSectionPiece {
-    padding: 25px;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
     width: 100%;
-    margin: 10px;
+    margin: 0 10px 10px 10px;
 }
 
 .link {
@@ -659,6 +682,7 @@ iframe {
 /*Audio*/
 audio {
     width: 100%;
+    height: 30px;
 }
 
 audio::-webkit-media-controls-panel {
@@ -735,6 +759,9 @@ textarea {
     font-family: 'Raleway', sans-serif;
 }
 
+.tinySpace {
+    margin: 15px 0;
+}
 .smallSpace {
     margin: 20px 0;
 }
