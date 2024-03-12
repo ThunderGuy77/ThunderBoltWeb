@@ -1,75 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/css" href="hyperRed.css"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"> 
-<url>
-  <loc>http://thunderboltweb.com/index.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
-<url>
-  <loc>http://thunderboltweb.com/about.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
-<url>
-  <loc>http://thunderboltweb.com/projects.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
-<url>
-  <loc>http://thunderboltweb.com/media.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
-<url>
-  <loc>http://thunderboltweb.com/contact.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
+
 <url>
   <loc>https://thunderboltweb.com</loc>
-  <lastmod>2024-02-13</lastmod>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>1.0</priority>
+</url>
+
+<url>
+  <loc>https://thunderboltweb.com/about.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.8</priority>
 </url>
 <url>
+  <loc>https://thunderboltweb.com/projects.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+<url>
+  <loc>https://thunderboltweb.com/media.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://thunderboltweb.com/contact.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
   <loc>http://thunderboltweb.com/projects/graviverse.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://thunderboltweb.com/projects/gbtd3.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://thunderboltweb.com/projects/geobloxmini.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://thunderboltweb.com/projects/doodleAi.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://thunderboltweb.com/projects/graviverseConcepts.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
 </url>
 <url>
   <loc>http://thunderboltweb.com/projects/mcAnimations.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.5</priority>
+</url>
+
+<url>
+  <loc>http://thunderboltweb.com/projects/mcAnimations/mc1.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
 </url>
 <url>
-  <loc>http://thunderboltweb.com/../index.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <loc>http://thunderboltweb.com/projects/mcAnimations/mc2.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
 </url>
 <url>
-  <loc>http://thunderboltweb.com/../about.html</loc>
-  <lastmod>2024-02-13</lastmod>
+  <loc>http://thunderboltweb.com/projects/mcAnimations/mc2.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
 </url>
 <url>
-  <loc>http://thunderboltweb.com/../projects.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
-<url>
-  <loc>http://thunderboltweb.com/../media.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
-<url>
-  <loc>http://thunderboltweb.com/../contact.html</loc>
-  <lastmod>2024-02-13</lastmod>
-</url>
-<url>
-  <loc>http://thunderboltweb.com/</loc>
-  <lastmod>2024-02-13</lastmod>
+  <loc>http://thunderboltweb.com/projects/mcAnimations/mc2.html</loc>
+  <lastmod>2024-03-12</lastmod>
+  <changefreq>yearly</changefreq>
+  <priority>0.3</priority>
 </url>
 </urlset>

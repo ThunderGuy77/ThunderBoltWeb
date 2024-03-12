@@ -948,6 +948,26 @@ textarea {
 }
 
 
+/*XML*/
+urlset {
+    background-color: #f44233;
+    font-family: 'Raleway', sans-serif;
+    line-height: 30px;
+    display: flex;
+    flex-direction: column;
+}
+url {
+    color: white;
+    background-color: black;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
 /*Footer*/
 footer {
     margin-top: 50px;
