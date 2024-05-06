@@ -1,0 +1,108 @@
+/*Main*/
+* {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    margin: 0;
+    padding: 0;
+
+    z-index: 1;
+    flex: 1;
+}
+
+footer {
+    background-color: black;
+    box-shadow: 0 0 10px black;
+
+    margin-top: 50px;
+    padding: 10px 10px 5px 10px;
+
+    color: white;
+    font-size: 10px;
+    text-align: center;   
+}
+
+/*General rules*/
+.centerText {
+    text-align: center;
+}
+
+/*Cards*/
+.cards {
+    box-sizing: border-box;
+    width: 100%;
+}
+.card {
+    width: 400px;
+    height: 500px;
+    perspective: 100000px;
+    
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.cardFront, .cardBack {
+    position: absolute;
+    width: 100%; /*Double the border*/
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 1s ease;
+    z-index: 1;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cardFront::before, .cardBack::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.cardFront::before {
+    background: linear-gradient(180deg, red, blue);
+}
+.cardBack::before {
+    background: linear-gradient(180deg, blue, red);
+}
+
+.cardBack {
+    transform: rotateY(180deg);
+}
+.card:hover .cardFront {
+    transform: rotateY(-180deg);
+}
+.card:hover .cardBack {
+    transform: rotateY(0deg);
+}
+
+.cardSlate {
+    background-color: black;
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border-radius: 20px;
+    padding: 10px;
+
+    transform: scale(0.97);
+}
+
+/*Specifics*/
+#JSWarning {
+    opacity: 1 !important;
+    color: white;
+}

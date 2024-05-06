@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slaide AI</title>
+    <link rel="icon" href="/portfolio/slaide/assets/SlaideIcon.png">
+    <link rel="stylesheet" href="slaide.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="welcome()">
+    <nav>
+        <div class="head">
+            <h1>Slaide AI</h1>
+            <img src="/portfolio/slaide/assets/SlaideIcon.png" style="border-radius: 100%; width:30px">
+        </div>
+        <ul>
+            <li><a href="index.html" id="link1">Chat</a></li>
+            <li><a href="about.html" id="link2">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>The AI that learns from you.</h2>
+
+        <!--Messages appear in this div section-->
+        <div id="messageArea"></div>
+        
+        <div class="inputArea">
+            <input type="text" id="chat" placeholder="Say something...">
+            <button onclick="sendChat()" id="send"><img src="/portfolio/slaide/assets/WhiteArrow.svg" style="transform:translateY(2px); width: calc(100%/10 + 25px);"></button>
+        </div>
+    </main>
+    <footer>
+        <h2></h2>
+    </footer>
+    <script src="slaide.js"></script>
+</body>
+</html>

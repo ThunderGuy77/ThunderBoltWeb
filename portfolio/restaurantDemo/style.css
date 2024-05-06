@@ -1,0 +1,210 @@
+/*General*/
+
+* {
+    color: white;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: rgb(255, 237, 150);
+}
+
+/*Navbar*/
+nav {
+    background-color: rgb(255, 187, 0);
+    width: 100%;
+    height: 100px;
+    top: 0;
+    position: fixed;
+
+    box-shadow: 0 10px 10px 5px transparent;
+    transition-duration: 0.25s;
+
+    display: flex;
+    align-items: center;
+}
+nav.shadow {
+    box-shadow: 0 10px 10px 5px rgb(182, 134, 0);
+}
+
+.alignLeft {
+    background-color: transparent;
+    
+    height: 100%;
+    margin-right: auto;
+
+    display: flex;
+    align-items: center;
+}
+.alignRight {
+    background-color: transparent;
+
+    height: 100%;
+    margin-left: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 10px;
+    width: 200px;
+    transition-duration: 0.25s;
+}
+#logo:hover {
+    scale: 1.1;
+}
+
+a {
+    text-decoration-color: transparent;
+    transition-duration: 0.25s;
+    display: inline;
+}
+a:hover {
+    text-decoration-color: white;
+}
+a.navLeft {
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 10px;
+
+    font-size: 20px;
+    text-decoration: none;
+}
+a.navLeft:hover {
+    text-shadow: 0 5px 3px rgb(182, 134, 0);
+}
+a.navRight {
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+
+    font-size: 20px;
+    text-decoration: none;
+}
+a.navRight:hover {
+    background-color: rgb(255, 187, 0);
+    color: black;
+}
+
+.topSpace {
+    padding-top: 100px;
+}
+
+/*Main*/
+.card {
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 15px rgb(182, 134, 0);
+
+    transition-duration: 0.25s;
+}
+.card:active {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 0 rgb(182, 134, 0);
+}
+
+.strip {
+    background-color: rgba(0, 0, 0, 0.25);
+    max-height: 560px;
+}
+
+.powerful {
+    font-size: 50px;
+}
+
+.dark {
+    color: rgb(182, 134, 0);
+}
+
+.darkHead {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 0 0 10px rgb(182, 134, 0);
+}
+
+.darkText {
+    padding: 0 15%;
+    color: rgb(182, 134, 0);
+}
+
+.darkButton {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+
+    text-decoration: none;
+}
+
+/*Technical*/
+.left {
+    width: 50%;
+    margin-right: auto;
+}
+.right {
+    width: 50%;
+    margin-left: auto;
+}
+
+.flexCenterY {
+    display: flex;
+    align-items: center;
+}
+.flexCenterX {
+    display: flex;
+    justify-content: center;
+}
+.flexCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.maxWidth1 {
+    max-width: 600px;
+}
+
+.sidePadding {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.marginY1 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.maxFit {
+    max-height: 560px;
+}
+
+.maxSize {
+    width: 100%;
+    object-fit: cover;
+}
+.rightRound {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.verticalSpace1 {
+    padding-top: 25px;
+}

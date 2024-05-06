@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--SEO-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Mercado">
+    <meta name="description" content="Contact Victor Mercado here to inquire about development and design services, or simply ask a general question.">
+
+    <!--Title-->
+	<title>Portfolio & WIP - ThunderBoltWeb</title>
+    <link rel="icon" href="icons/mainLogoFav.png">
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+    <!--Main style-->
+    <link href="hyperRed.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Loader element-->
+    <div id="loader">
+        <div id="overlay">
+            <img src="icons/githubIcon.svg" alt="Loading...">
+        </div>
+    </div>
+
+    <!--Canvas used for background-->
+    <canvas id="backgroundCanvas"></canvas>
+
+    <!--Theme button-->
+    <div id="themeButton" onclick="toggleTheme()">
+        <img src="icons/moon.svg" id="moonIcon" alt="Change Theme" class="iconActive">
+        <img src="icons/sun.svg" id="sunIcon" alt="Change Theme">
+    </div>
+
+    <!--Page elements-->
+    <div class="main">
+        <nav>
+            <div class="linkElement"><a href="index.html" class="linkButton">Home</a></div>
+            <div class="linkElement"><a href="about.html" class="linkButton">About</a></div>
+            <div class="centerLogo">
+                <a href="index.html">
+                    <img src="icons/mainLogoSmall.png" alt="ThunderBoltWeb Logo">
+                </a>
+            </div>
+            <div class="linkElement"><a href="projects.html" class="linkButton">Projects</a></div>
+            <div class="linkElement"><a href="media.html" class="linkButton">Media</a></div>
+        </nav>
+    
+        <div class="topSpace"></div>
+        <h1>Portfolio</h1>
+
+        <div class="flexCenter">
+            <div class="textArea marginBottom">
+                <p>Welcome to the portfolio page. Though the website in its entirety is meant to be a form of portfolio, you will find some smaller WIP projects here.</p>
+                <p>It is highly likely that this page will be improved in the future, and projects shown here will be moved under the <a href="projects.html">"Projects" page</a> upon completion.</p>
+            </div>
+        </div>
+
+        <div class="flexCenter">
+            <div class="socials">
+                <h2>Website Examples</h2>
+                <p>These samples will demonstrate variety in technical ability concerning front-end web development.</p>
+                <div class="socialSection">
+                    <a class="socialLink" href="portfolio/slaide/index.html" target="_blank">
+                        <img src="images/slaideThumbnail.png" alt="Slaide Icon">
+                        <p>Slaide UI</p>
+                    </a>
+                    <a class="socialLink" href="portfolio/restaurantDemo/index.html" target="_blank">
+                        <img src="icons/mainLogo.png" alt="ThunderGuy Logo">
+                        <p>Restaurant Page</p>
+                    </a>
+                    <a class="socialLink" href="portfolio/sleekCards/index.html" target="_blank">
+                        <img src="icons/mainLogo.png" alt="ThunderGuy Logo">
+                        <p>Rotating Cards</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flexCenter">
+        <div class="textArea marginBottom">
+            <p>Notable projects not shown here (for technical reasons):</p>
+            <ul>
+                <li>RealOnes Social Media</li>
+                <li>Avlory Web Development</li>
+            </ul>
+            <p>These projects have separate development methods and are not in place to run without the backend being specially developed for them.</p>
+            <p>If you would like to see some of the work involved with these projects, please <a href="contact.html">contact me</a>!</p>
+        </div>
+    </div>
+
+    <footer>
+        <a href="contact.html">Contact Me</a>
+        <p>Copyright &copy; Victor Mercado 2024</p>
+    </footer>
+
+    <!--Javascript-->
+    <script src="background.js"></script>
+    <script src="loader.js"></script>
+    <script src="darkmode.js"></script>
+</body>
+</html>
